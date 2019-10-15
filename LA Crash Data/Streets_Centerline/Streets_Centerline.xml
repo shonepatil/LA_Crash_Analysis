@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <accconst>None</accconst>
+        <useconst>None</useconst>
+    </idinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>CLAPP.centerline</enttypl>
+                <enttypd>Street centerline line feature class</enttypd>
+                <enttypds>BOE Mapping.</enttypds>
+            </enttyp>
+            <attr>
+                <attrlabl>SHAPE</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                              
+                    <udom>Coordinates defining the features.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>ESRI</attrdefs>
+                <attrdomv>
+                              
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>DEDRQ</attrlabl>
+                <attrdef>Dedication requirement.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>1</edomv>
+                                    
+                        <edomvd>Dedication not required</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>3</edomv>
+                                    
+                        <edomvd>Dedication may be required</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>0</edomv>
+                                    
+                        <edomvd>Dedication requirement unknown</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>2</edomv>
+                                    
+                        <edomvd>Dedication required</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>OBS</attrlabl>
+                <attrdef>This attribute is not currently being entered. This attribute is a project number for street resurfacing projects. The values are assigned by the Bureau of Street Services.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>OBS</attrlabl>
+                <attrdef>This attribute is not currently being entered. This attribute is a project number for street resurfacing projects. The values are assigned by the Bureau of Street Services.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>STNAME_A</attrlabl>
+                <attrdef>Street name Alias.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ST_SUBTYPE</attrlabl>
+                <attrdef>Street subtype.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>USER_ID</attrlabl>
+                <attrdef>The name of the user carrying out the edits.</attrdef>
+                <attrdefs>BOE Mapping</attrdefs>
+                <attrdomv>
+                              
+                    <udom>Information identifying the user editing feature and attribute data. Value is automatically populated when user enters their login.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>SV_STATUS</attrlabl>
+                <attrdef>Status of street in service, whether the street is an accessible roadway.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>Y</edomv>
+                                    
+                        <edomvd>Yes</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>N</edomv>
+                                    
+                        <edomvd>No</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>MODSTDESIG</attrlabl>
+                <attrdef>Modified street designation. The description of the values are determined by Department of City Planning. This field is no longer used in Street Centerline line feature class, since the adoption of Planning's Mobility 2035 Plan. As of August 2015, Department of City Planning has maintained the modified street designation in their data, which relates to Street Centerline line feature class by the ASSETID common identifier field.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>40000</edomv>
+                                    
+                        <edomvd>Modified Secondary Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>20000</edomv>
+                                    
+                        <edomvd>Modified Principal Major Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>89000</edomv>
+                                    
+                        <edomvd>Modified Secondary Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>37000</edomv>
+                                    
+                        <edomvd>Modified Major Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>57000</edomv>
+                                    
+                        <edomvd>Modified Collector Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>422000</edomv>
+                                    
+                        <edomvd>Modified Scenic Collector Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>19600</edomv>
+                                    
+                        <edomvd>Modified Super Major Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>100000</edomv>
+                                    
+                        <edomvd>Modified Special Collector Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>41000</edomv>
+                                    
+                        <edomvd>Modified Minimum Secondary Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>425000</edomv>
+                                    
+                        <edomvd>Modified Scenic Arterial Mountain</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>110000</edomv>
+                                    
+                        <edomvd>Modified Scenic Parkway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>420600</edomv>
+                                    
+                        <edomvd>Modified Scenic Major Highway II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>412000</edomv>
+                                    
+                        <edomvd>Modified Scenic Divided Secondary Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>421000</edomv>
+                                    
+                        <edomvd>Modified Scenic Secondary Highway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>420400</edomv>
+                                    
+                        <edomvd>Modified Scenic Modified Major Highway</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TDIR</attrlabl>
+                <attrdef>Street direction.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>S</edomv>
+                                    
+                        <edomvd>South</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>N</edomv>
+                                    
+                        <edomvd>North</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>E</edomv>
+                                    
+                        <edomvd>East</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>W</edomv>
+                                    
+                        <edomvd>West</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ADLF</attrlabl>
+                <attrdef>From address range, left side.</attrdef>
+                <attrdefs>BOE Mapping</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ZIP_R</attrlabl>
+                <attrdef>Zip code right.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ADRT</attrlabl>
+                <attrdef>To address range, right side.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>INT_ID_TO</attrlabl>
+                <attrdef>Street intersection identification number at the line segment's end node. The value relates to the intersection layer attribute table, to the CL_NODE_ID field. The values are assigned automatically and consecutively by the ArcGIS software first to the street centerline data layer and then the intersections data layer, during the creation of new intersection points. Each intersection identification number is a unique value.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SECT_ID</attrlabl>
+                <attrdef>Section ID used by the Bureau of Street Services.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>none</edomv>
+                                    
+                        <edomvd>No Section ID value</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>private</edomv>
+                                    
+                        <edomvd>Private street</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>closed</edomv>
+                                    
+                        <edomvd>Street is closed from service</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>temp</edomv>
+                                    
+                        <edomvd>Temporary</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>propose</edomv>
+                                    
+                        <edomvd>Proposed construction of a street</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>walk</edomv>
+                                    
+                        <edomvd>Street line is a walk or walkway</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>known as</edomv>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>numeric value</edomv>
+                                    
+                        <edomvd>A 7 digit numeric value for street resurfacing</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>outside</edomv>
+                                    
+                        <edomvd>Street line segment is outside the City of Los Angeles boundary</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>pierce</edomv>
+                                    
+                        <edomvd>Street segment type</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>alley</edomv>
+                                    
+                        <edomvd>Named alley</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>STSFX_A</attrlabl>
+                <attrdef>Street suffix Alias.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SFXDIR</attrlabl>
+                <attrdef>Street direction suffix</attrdef>
+                <attrdefs>BOE Mapping</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>N</edomv>
+                                    
+                        <edomvd>North</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>E</edomv>
+                                    
+                        <edomvd>East</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>W</edomv>
+                                    
+                        <edomvd>West</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>S</edomv>
+                                    
+                        <edomvd>South</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>CRTN_DT</attrlabl>
+                <attrdef>Creation date of the polygon feature.</attrdef>
+                <attrdefs>BOE Mapping</attrdefs>
+                <attrdomv>
+                              
+                    <udom>The date that the spatial feature data was created. Value is automatically populated after user digitizes new features and saves their edits.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>STNAME</attrlabl>
+                <attrdef>Street name.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ZIP_L</attrlabl>
+                <attrdef>Zip code left.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>STSFX</attrlabl>
+                <attrdef>Street suffix.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>BLVD</edomv>
+                                    
+                        <edomvd>Boulevard</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>ADLT</attrlabl>
+                <attrdef>To address range, left side.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ID</attrlabl>
+                <attrdef>Unique line segment identifier</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>MAPSHEET</attrlabl>
+                <attrdef>The alpha-numeric mapsheet number, which refers to a valid B-map or A-map number on the Cadastral tract index map.</attrdef>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>___B___, ___A___, ___-5A___</edomv>
+                                    
+                        <edomvd>Any of these alpha-numeric combinations are used, whereas the underlined spaces are the numbers.</edomvd>
+                                    
+                        <edomvds>BOE Mapping.</edomvds>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>STNUM</attrlabl>
+                <attrdef>Street identification number. This field relates to the Official Street Name table named EASIS, to the corresponding STR_ID field.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ASSETID</attrlabl>
+                <attrdef>User-defined feature autonumber.</attrdef>
+                <attrdefs>BOE Mapping</attrdefs>
+                <attrdomv>
+                              
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TEMP</attrlabl>
+                <attrdef>This attribute is no longer used. This attribute was used to enter 'R' for reference arc line segments that were added to the spatial data, in coverage format. Reference lines were temporary and not part of the final data layer. After editing the permanent line segments, the user would delete temporary lines given by this attribute.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>LST_MODF_DT</attrlabl>
+                <attrdef>Last modification date of the polygon feature.</attrdef>
+                <attrdefs>BOE Mapping</attrdefs>
+                <attrdomv>
+                              
+                    <udom>The date that the spatial feature data or attribute data was updated. Value is automatically populated after user saves their edits.</udom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>REMARKS</attrlabl>
+                <attrdef>This attribute is a combination of remarks about the street centerline. Values include a general remark, the Council File number, which refers the street status, or whether a private street is a private driveway. The Council File number can be researched on the City Clerk's website http://cityclerk.lacity.org/lacityclerkconnect/</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ST_DESIG</attrlabl>
+                <attrdef>Street designation number. The description of the values are determined by Department of City Planning. This field is no longer used in Street Centerline line feature class, since the adoption of Planning's Mobility 2035 Plan. As of August 2015, Department of City Planning has maintained the modified street designation in their data, which relates to Street Centerline line feature class by the ASSETID common identifier field. Note that a street centerline designated as alley is a named alley, and this feature would then not also be in the Alley layer.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+                <attrdomv>
+                              
+                    <edom>
+                                    
+                        <edomv>6</edomv>
+                                    
+                        <edomvd>PRIVATE STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>16</edomv>
+                                    
+                        <edomvd>SCENIC SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>68</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED DIVIDED SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>62</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED SCENIC MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>15</edomv>
+                                    
+                        <edomvd>SCENIC PARKWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>3</edomv>
+                                    
+                        <edomvd>SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>18</edomv>
+                                    
+                        <edomvd>DIVIDED SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>5</edomv>
+                                    
+                        <edomvd>LOCAL STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>8</edomv>
+                                    
+                        <edomvd>FREEWAY ON-RAMP</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>10</edomv>
+                                    
+                        <edomvd>DIVIDED MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>9</edomv>
+                                    
+                        <edomvd>FREEWAY OFF-RAMP</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>12</edomv>
+                                    
+                        <edomvd>SCENIC MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>11</edomv>
+                                    
+                        <edomvd>UNKNOWN TYPE OR CLOSED STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>14</edomv>
+                                    
+                        <edomvd>SCENIC DIVIDED MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>13</edomv>
+                                    
+                        <edomvd>MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>23</edomv>
+                                    
+                        <edomvd>SCENIC DIVIDED MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>22</edomv>
+                                    
+                        <edomvd>SCENIC COLLECTOR STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>63</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>2</edomv>
+                                    
+                        <edomvd>MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>65</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED SCENIC PARKWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>64</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED SCENIC DIVIDED MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>17</edomv>
+                                    
+                        <edomvd>SCENIC MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>25</edomv>
+                                    
+                        <edomvd>STAIRWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>24</edomv>
+                                    
+                        <edomvd>PRINCIPAL MAJOR HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>19</edomv>
+                                    
+                        <edomvd>SPECIAL COLLECTOR STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>56</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED PRIVATE STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>21</edomv>
+                                    
+                        <edomvd>SCENIC DIVIDED SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>26</edomv>
+                                    
+                        <edomvd>CANAL</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>20</edomv>
+                                    
+                        <edomvd>ALLEY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>52</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>67</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED SCENIC MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>60</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED DIVIDED MAJOR HIGHWAY - CLASS I</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>54</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED COLLECTOR STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>51</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED DIVIDED MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>55</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED LOCAL STREET</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>66</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED SCENIC SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>7</edomv>
+                                    
+                        <edomvd>FREEWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>53</edomv>
+                                    
+                        <edomvd>UNDEDICATED OR PROPOSED SECONDARY HIGHWAY</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>1</edomv>
+                                    
+                        <edomvd>DIVIDED MAJOR HIGHWAY - CLASS II</edomvd>
+                                  
+                    </edom>
+                              
+                    <edom>
+                                    
+                        <edomv>4</edomv>
+                                    
+                        <edomvd>COLLECTOR STREET</edomvd>
+                                  
+                    </edom>
+                            
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>INT_ID_FROM</attrlabl>
+                <attrdef>Street intersection identification number at the line segment's start node. The value relates to the intersection layer attribute table, to the CL_NODE_ID field. The values are assigned automatically and consecutively by the ArcGIS software first to the street centerline data layer and then the intersections data layer, during the creation of new intersection points. Each intersection identification number is a unique value.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>ADRF</attrlabl>
+                <attrdef>From address range, right side.</attrdef>
+                <attrdefs>BOE Mapping.</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.LEN</attrlabl>
+            </attr>
+        </detailed>
+        <overview>
+            <eaover>DATA DICTIONARY Street Designation, Planning Department's Community Plan Maps. 1 DIVIDED MAJOR HIGHWAY - CLASS II 2 MAJOR HIGHWAY - CLASS II 3 SECONDARY HIGHWAY 4 COLLECTOR STREET 5 LOCAL STREET 6 PRIVATE STREET 7 FREEWAY 8 FREEWAY ON-RAMP 9 FREEWAY OFF-RAMP 10 DIVIDED MAJOR HIGHWAY - CLASS I 11 UNKNOWN TYPE OR CLOSED STREET 12 SCENIC MAJOR HIGHWAY - CLASS I 13 MAJOR HIGHWAY - CLASS I 14 SCENIC DIVIDED MAJOR HIGHWAY - CLASS I 15 SCENIC PARKWAY 16 SCENIC SECONDARY HIGHWAY 17 SCENIC MAJOR HIGHWAY - CLASS II 18 DIVIDED SECONDARY HIGHWAY 19 SPECIAL COLLECTOR STREET 20 ALLEY 21 SCENIC DIVIDED SECONDARY HIGHWAY 22 SCENIC COLLECTOR STREET 23 SCENIC DIVIDED MAJOR HIGHWAY - CLASS II 51 UNDEDICATED OR PROPOSED DIVIDED MAJOR HIGHWAY CLASS II 52 UNDEDICATED OR PROPOSED MAJOR HIGHWAY CLASS II 53 UNDEDICATED OR PROPOSED SECONDARY HIGHWAY 54 UNDEDICATED OR PROPOSED COLLECTOR STREET 55 UNDEDICATED OR PROPOSED LOCAL STEET 56 UNDEDICATED OR PROPOSED PRIVATE STREET 60 UNDEDICATED OR PROPOSED DIVIDED MAJOR HIGHWAY CLASS I 62 UNDEDICATED OR PROPOSED SCENIC MAJOR HIGHWAY CLASS I 63 UNDEDICATED OR PROPOSED PROPOSED MAJOR HIGHWAY CLASS I 64 UNDEDICATED OR PROPOSED SCENIC DIVIDED MAJOR HIGHWAY CLASS I 65 UNDEDICATED OR PROPOSED SCENIC PARKWAY 66 UNDEDICATED OR PROPOSED SCENIC SECONDARY HIGHWAY 67 UNDEDICATED OR PROPOSED SCENIC MAJOR HIGHWAY CLASS II 68 UNDEDICATED OR PROPOSED DIVIDED SECONDARY HIGHWAY</eaover>
+        </overview>
+    </eainfo>
+    <metainfo>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
